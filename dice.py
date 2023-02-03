@@ -35,3 +35,16 @@ def roll_dice():
     while roll_again.lower() == 'yes' or roll_again.lower() == 'y':
         # use os to clear screen 
         os.system('cls' if os.name == 'nt' else 'clear')
+        amount = dice_num()
+
+        #if user choses 2 dice print values and sum of dice
+        if amount == '2' or amount == 'two':
+            print('Lets roll the dice...')
+            dice1 = random.randint(min_val, max_val)
+            dice2 = random.randint(min_val, max_val)
+            #print values and sum of dice
+            print('Dice One: ',dice1)
+            print('Dice Two: ',dice2)
+            print('Total= ', dice1 + dice2)
+            #Ask if they want to roll again
+            roll_again = input('Want to roll again? ')
