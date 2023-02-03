@@ -21,3 +21,12 @@ def dice_num():
         #Except with value error as err and print err
         except ValueError as err:
             print(err)
+
+#Function to roll the dice
+def roll_dice():
+    #min value of dice
+    min_val = 1
+    #max value of dice
+    max_val = 6
+    #roll dice again option
+    roll_again = 'y'
