@@ -30,3 +30,8 @@ def roll_dice():
     max_val = 6
     #roll dice again option
     roll_again = 'y'
+
+    #While roll again is yes call amount dice num
+    while roll_again.lower() == 'yes' or roll_again.lower() == 'y':
+        # use os to clear screen 
+        os.system('cls' if os.name == 'nt' else 'clear')
