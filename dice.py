@@ -48,3 +48,16 @@ def roll_dice():
             print('Total= ', dice1 + dice2)
             #Ask if they want to roll again
             roll_again = input('Want to roll again? ')
+        #else if the pick one dice
+        else:
+            print('Lets roll the die...')
+            dice1 = random.randint(min_val, max_val)
+            #print value with f string
+            print(f'The value is: {dice1}')
+            #Ask if they want to roll again
+            roll_again = input('Want to toll again? ')
+
+# execute func if its called
+if __name__ == '__main__':
+    roll_dice()
+
